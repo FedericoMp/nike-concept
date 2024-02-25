@@ -21,7 +21,7 @@ const Nav = () => {
                     <img src={headerLogo} alt="Nike" width={130} height={29}/>
                 </a>
                 {/* Desktop Nav Menu */}
-                <ul className="flex flex-1 justify-center lg:justify-end items-center gap-16 max-lg:hidden">
+                <ul className="flex flex-1 justify-center lg:justify-end lg:mr-16 items-center gap-16 max-lg:hidden">
                     { navLinkMap() }
                 </ul>
                 {/* Mobile Nav Menu */}
@@ -31,7 +31,7 @@ const Nav = () => {
                         <div className={"bg-coral-red h-[2px] w-full rounded-[5px] transition-all origin-left " + (open ? "opacity-0" : "")}></div>
                         <div className={"bg-coral-red h-[2px] w-full rounded-[5px] transition-all origin-left " + (open ? "-rotate-45" : "")}></div>
                     </button>
-                    <div className={"dropdown-content absolute right-0 top-10 bg-white p-6 min-w-40 shadow-md rounded-md z-1 " + (open ? "block" : "hidden")}>
+                    <div className={"dropdown-content absolute right-0 top-10 bg-white p-6 min-w-40 shadow-md rounded-md z-11 " + (open ? "block" : "hidden")}>
                         <ul className="flex flex-col justify-center items-end gap-6">
                             { navLinkMap() }
                         </ul>
